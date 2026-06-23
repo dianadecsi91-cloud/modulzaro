@@ -1,1 +1,22 @@
 <p>list works!</p>
+
+    
+    <table>
+        <thead>
+            <tr>
+            
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+             
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products">
+           <td>{{item.name}}</td>
+           <td>{{item.price}}</td>
+           <td>{{item.quantity}} DB</td>
+           <td><button (click)="Add()">Kosárba rak!</button></td>
+           </tr>
+        </tbody>
+    </table>

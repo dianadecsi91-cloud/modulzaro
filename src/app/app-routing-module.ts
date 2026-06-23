@@ -11,7 +11,8 @@ const routes: Routes = [
   {path: "create", component: Create},
   {path: "delete", component: Delete},
   {path: "list", component: List},
-  {path: "product", component: Product}
+  {path: "product", component: Product},
+  {path: "", redirectTo: "homepage", pathMatch: "full"},
 
 ];
 

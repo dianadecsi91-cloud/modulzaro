@@ -8,4 +8,6 @@ export class Product {
     description: string = ""
     quantity: number | null = null
     availability: boolean = true
+
+    
 }
