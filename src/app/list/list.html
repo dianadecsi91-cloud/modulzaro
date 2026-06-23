@@ -1,7 +1,7 @@
-<p>list works!</p>
 
-    
-    <table>
+
+    <button  type="button" class="btn btn-light" (click)="Inkr()">Növekvő sorrendbe!</button> <button  type="button" class="btn btn-light" (click)="Dekr()">Csökkenő sorrendbe!</button><button  type="button" class="btn btn-light" (click)="Van()">Elérhető</button>
+    <table class="table table-bordered">
         <thead>
             <tr>
             
@@ -14,9 +14,9 @@
         <tbody>
             <tr *ngFor="let item of products">
            <td>{{item.name}}</td>
-           <td>{{item.price}}</td>
+           <td>{{item.price}} FT</td>
            <td>{{item.quantity}} DB</td>
-           <td><button (click)="Add()">Kosárba rak!</button></td>
+           <td><button  type="button" class="btn btn-info" (click)="Add()">Kosárba rak!</button></td>
            </tr>
         </tbody>
     </table>

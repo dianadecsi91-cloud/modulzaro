@@ -42,6 +42,10 @@ read(): void {
   let jsonArray= JSON.parse(localStorage.getItem("ang_WS") ?? "[]")
   this.products = Object.values(jsonArray).map(x => Object.assign(new Product(), x))
 }
+Inkr(){}
+Dekr(){}
+Van(){}
+
 seed(): void {
 let d = new Product()
   
